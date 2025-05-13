@@ -1,5 +1,5 @@
 "use client"; // Ensure this is a Client Component
-import { isValid, format } from "date-fns";
+
 import Header from "@/src/components/Header/Header";
 import Link from "next/link";
 import PopularCategories from "@/src/components/PopularCategories/PopularCategories";
@@ -7,6 +7,7 @@ import Footer from "@/src/components/Footer/Footer";
 import React, { useState } from "react";
 import { Pagination } from "react-bootstrap";
 import { useRouter } from "next/navigation";
+import { isValid, format } from "date-fns";
 import "./blogPage.css"
 
 export default function BlogPage({ posts, links, meta }) {

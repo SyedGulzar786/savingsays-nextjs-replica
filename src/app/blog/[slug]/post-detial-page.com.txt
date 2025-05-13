@@ -1,0 +1,63 @@
+// <div className="container" style={{paddingTop: '30px', paddingBottom: '30px'}}>
+        //     <div className="row">
+        //         <div className="col-md-9">
+        //             <h1 className="mb-2">{post?.title}</h1>
+        //             <div className="post-meta d-flex gap-2 mb-4 text-secondary">
+        //                 <span
+        //                     className="date">Published on {format(new Date(post?.publishedAt), 'MMMM dd, yyyy')}</span>
+        //                 |
+        //                 <span className="author">
+        //                     By <Link href={`/authors/${post?.author?.slug}`}>{post?.author?.name}</Link>
+        //                 </span>
+        //                 |
+        //                 <span className="categories">
+        //                     {post?.categories?.map((category, index) => (
+        //                         <div key={index}>{category?.name}</div>
+        //                     ))}
+        //                 </span>
+        //             </div>
+        //             {post?.media?.original &&
+        //                 <img src={post?.media?.original} alt={post?.title} className="img-fluid mb-4"
+        //                      srcSet={post?.media?.srcSet}/>
+        //             }
+        //             <div className="entry-content mb-5" dangerouslySetInnerHTML={{__html: post?.content}}></div>
+
+        //             <Coupons
+        //                 hasMoreCoupons={visibleCount < coupons.length}
+        //                 loadMoreCoupons={loadMoreCoupons}
+        //                 coupons={coupons.slice(0, visibleCount)}
+        //                 type="post"
+        //                 loading={loading}
+        //             />
+
+                   
+        //         </div>
+        //         <div className="col-md-3">
+        //             <div className="sidebar-blog">
+        //                 <h2>Related Blogs</h2>
+        //                 <ul className="list-unstyled latest-articles">
+        //                     {latestArticles.length > 0 ? (
+        //                         latestArticles.map((article, index) => (
+        //                             <li key={index} className="d-flex flex-column gap-3 mb-5">
+                                      
+        //                                 <img src={article?.media?.thumb} alt={article.title} className="article-thumbnail"/>
+        //                                 <p className="article-date mb-0"> 📆 Published: {format(new Date(article?.publishedAt), 'MMMM dd, yyyy')}</p>
+        //                                 <div>
+        //                                     <Link href={article?.url} className="article-title">
+        //                                         {article.title}
+        //                                     </Link>
+
+        //                                     <div className='card-text'>{article?.excerpt}</div>
+                                          
+        //                                 </div>
+        //                             </li>
+        //                         ))
+        //                     ) : (
+        //                         <p>No articles available</p>
+        //                     )}
+        //                 </ul>
+        //             </div>
+                   
+        //         </div>
+        //     </div>
+        // </div>

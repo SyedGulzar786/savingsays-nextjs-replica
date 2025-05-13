@@ -1,0 +1,716 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+ 
+.search-bar svg {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Position from the right edge */
+    transform: translateY(-50%);
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    color: #666; /* Icon color */
+  }
+
+  .search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+
+
+
+
+  .menu {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+  .menu ul {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    
+  }
+  .menu ul li a:hover {
+    background-color: #333;
+  }
+
+  .nav-link:focus, .nav-link:hover{
+    color: #497AA5; 
+  }
+  a.nav-link:active {
+    color: #497AA5;
+}
+  /* Right side menu for mobile */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Hide initially on the right */
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    transition: right 0.3s ease-in-out;
+    z-index: 1050;
+    padding-top: 60px;
+  }
+  .mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .mobile-menu ul li a {
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+  }
+  .mobile-menu.show {
+    right: 0; /* Slide in */
+  }
+
+  /* Close icon for mobile menu */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Flexbox for header items on mobile */
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure items wrap properly */
+  }
+
+  .search-bar {
+    position: relative;
+    max-width: 300px; /* Adjust as needed */
+    width: 100%;
+  }
+  .search-bar input {
+    padding-right: 40px;
+    background: transparent;
+    border-color: #dee2e6;
+    border-radius: 9px;
+  }
+  .search-bar svg {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Position from the right edge */
+    transform: translateY(-50%);
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    color: #666; /* Icon color */
+  }
+
+  .search-container input::placeholder {
+    color: #00000098; 
+  }
+
+  /* Responsive design for mobile */
+  @media (max-width: 991px) {
+    .logo {
+      flex: 1;
+    }
+    .search-bar {
+      flex: 2;
+    }
+    .navbar-toggler {
+      flex: 0;
+    }
+  }
+
+  /* Hide Toggle button on large screens */
+  @media (min-width: 992px) {
+    .navbar-toggler {
+      display: none;
+    }
+  }
+
+  /* Hide mobile menu on desktop */
+  @media (min-width: 992px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  /* Hide search bar on mobile */
+@media (max-width: 991px) {
+    .search-bar {
+      display: none;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+  }
+
+
+  .brand-bar-search {
+    padding: 2rem 0; /* Adjusted padding */
+  background: url("https://savsays.isoftik.com/wp-content/uploads/2024/01/gld-bg.jpg");
+  background-repeat: no-repeat;
+  }
+  .img-brand img {
+    max-width: 100%; /* Responsive image */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .store-images {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+    gap: 15px; /* Gap between images */
+    animation: slideIn 1s ease-out;
+  }
+  .store-images img {
+    max-width: 120px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .modal-35w {
+    max-width: none !important;
+    width: 35%;
+  }
+.modal-45w {
+  max-width: none !important;
+  width: 45%;
+}
+  .modal-content {
+    padding: 0px;
+    border-radius: 8x;
+    background-color: #ECFCFC !important;
+    border: 1px solid #BFBFBF !important;
+  }
+
+
+  .modal-header {
+    padding-bottom: 0px !important;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.modal-footer {
+  justify-content: center;
+  font-size: 13px;
+}
+
+.modal-content input[type=checkbox] {
+  font-size: 18px;
+  margin-left: -18px;
+  padding: 2px;
+}
+  .modal-content input[type=email],
+  .modal-content input[type=password]{
+    /*width: 100%;*/
+    /*max-width: 400px; !* Limit the width *!*/
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .modal-content .closeBtn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  .content-brand h5 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #fff;
+    
+}
+  .search-boxes-two h2 {
+    font-size: 1.75rem; /* Larger font size */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .img-brand.mb-3 h2 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 70px;
+    
+    margin:0px;
+}
+
+h2.text-center.mb-4.color {
+    color: #fff;
+    
+}
+
+.brand-bar-search {
+    /* padding: 2rem 0; */
+    background: url(https://savsays.isoftik.com/wp-content/uploads/2024/01/gld-bg.jpg);
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+button#openModalBtn {
+    background-color: #f46e3a;
+    padding: 10px 80px;
+    margin-top: 49px !important;
+    border-radius: 17px;
+    color: #fff;
+}
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .store-images {
+      gap: 10px; /* Reduce gap on smaller screens */
+    }
+    .content-brand h5,
+    .search-boxes-two h2 {
+      font-size: 1.5rem; /* Smaller font size on mobile */
+    }
+  }
+
+
+
+
+  section.middel-section.spacer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+section.middel-section.spacer h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #201D26;
+    font-family: 'Poppins';
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 15px;
+    color: #27221F;
+    font-weight: 400;
+    
+    line-height: 27px;
+}
+
+section.middel-section.spacer h3{
+font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #000;
+    
+    text-transform: capitalize;
+
+}
+
+.testimonial-slider {
+  background-image: url("https://savsays.isoftik.com/wp-content/uploads/2024/01/reviews-bg.jpg");
+    margin-bottom:0px;
+    background-repeat: no-repeat;
+  }
+  .testimonial-title {
+    color: #fff;
+  }
+  .testimonial-title h2 {
+    padding-left: 0.2em;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    height: 100%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #fff;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+  .testimonial-title {
+    margin-top: 20px;
+}
+
+p.p-carousel {
+    color: white;
+    padding-left: 10px;
+}
+
+a.view-more-btn {
+    /* padding-left: 15px; */
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 29px;
+    font-family: 'Poppins';
+    border-radius: 20px;
+    /* margin-top: 15px !important; */
+}
+  
+  @media (min-width: 576px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 50%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+  }
+  @media (min-width: 768px) {
+    .carousel-inner {
+      padding: 1em;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      opacity: 1;
+      position: absolute;
+      left: 2em;
+      top: 105%;
+      transform: translateY(-50%);
+  }
+    .carousel-control-next {
+      left: 7em;
+    }
+  }
+
+
+  .feature-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .feature-box img {
+    max-width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .btn-custom {
+    padding: 10px 40px;
+  }
+  h1.display-4.font-weight-bold.mb-4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #000;
+    
+    text-transform: capitalize;
+    margin:0px !important;
+}
+
+.btn-custom {
+    padding: 10px 40px;
+    margin-top: 37px;
+}
+  
+
+.background-image {
+    background-image: url('https://savsays.isoftik.com/wp-content/uploads/2024/01/sg-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .feature-box {
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  .feature-image img {
+    width: 100%;
+    height: auto;
+  }
+  .feature-content {
+    padding: 1rem;
+  }
+  .feature-content hr {
+    border: 0;
+    height: 3px;
+    background-color: #df5353;
+  }
+  .feature-title {
+    color: #202020;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .feature-subtitle {
+    color: #e26363;
+    font-size: 0.875rem;
+  }
+
+  h3.feature-title a {
+    text-decoration: none;
+    color: #000;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+.text-center.mb-8 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #fff;
+    
+    text-transform: capitalize;
+    margin: 0px !important;
+}
+
+section.lccd-sec.bg-cover {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  
+}
+
+/* ul.list-unstyled {
+    display: flex;
+   justify-content: space-between; 
+} */
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}.footer-section {
+background-color: #233243;
+position: relative;
+overflow: hidden;
+z-index: 9;
+margin-top:0px !important;
+}
+.footer-section:before {
+content: '';
+position: absolute;
+top: -146%;
+left: -18%;
+width: 44%;
+height: 257%;
+transform: rotate(54deg);
+background-color: rgb(31, 47, 64);
+-webkit-transform: rotate(54deg);
+-moz-transform: rotate(54deg);
+-ms-transform: rotate(54deg);
+-o-transform: rotate(54deg);
+z-index: -10;
+}
+.footer-section:after {
+position: absolute;
+content: '';
+background-color: rgb(31, 47, 64);
+top: -24%;
+right: 4%;
+width: 26%;
+height: 264%;
+transform: rotate(44deg);
+-webkit-transform: rotate(44deg);
+-moz-transform: rotate(44deg);
+-ms-transform: rotate(44deg);
+-o-transform: rotate(44deg);
+z-index: -10;
+}
+.footer-top {
+padding-top: 96px;
+padding-bottom: 50px;
+}
+.footer-top p,
+.company-footer-contact-list li {
+color: #ffffff;
+}
+.company-footer-contact-list {
+margin-top: 10px;
+}
+.company-footer-contact-list li {
+display: flex;
+display: -webkit-flex;
+align-items: center;
+}
+.company-footer-contact-list li+li {
+margin-top: 5px;
+}
+.company-footer-contact-list li i {
+margin-right: 10px;
+font-size: 20px;
+display: inline-block;
+}
+
+.footer-top .site-logo {
+margin-bottom: 25px;
+display: block;
+max-width: 170px;
+}
+.widget-title {
+text-transform: capitalize;
+}
+.footer-top .widget-title {
+color: #ffffff;
+margin-bottom: 40px;
+}
+.courses-link-list li+li {
+margin-top: 10px;
+}
+.courses-link-list li a {
+color: #ffffff;
+text-transform: capitalize;
+font-family: var(--para-font);
+font-weight: 400;
+}
+.courses-link-list li a:hover {
+color: #ffb606;
+}
+.courses-link-list li i {
+margin-right: 5px;
+}
+.footer-top .small-post-title a {
+font-family: var(--para-font);
+color: #ffffff;
+font-weight: 400;
+}
+.small-post-item .post-date {
+color: #ffb606;
+margin-bottom: 3px;
+font-family: var(--para-font);
+font-weight: 400;
+}
+.small-post-list li+li {
+margin-top: 30px;
+}
+.news-letter-form {
+margin-top: 15px;
+}
+.news-letter-form input {
+width: 100%;
+padding: 12px 25px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border: none;
+}
+.news-letter-form input[type="submit"] {
+width: auto;
+border: none;
+background-color: #ffb606;
+padding: 9px 30px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+color: #ffffff;
+margin-top: 10px;
+}
+.footer-bottom {
+padding: 13px 0;
+border-top: 1px solid rgba(255, 255, 255, 0.149);
+}
+.copy-right-text {
+color: #ffffff;
+}
+.copy-right-text a {
+color: #ffb606;
+}
+.terms-privacy li+li {
+margin-left: 30px;
+}
+.terms-privacy li a {
+color: #ffffff;
+position: relative;
+}
+.terms-privacy li a:after {
+position: absolute;
+content: '-';
+color: #ffffff;
+display: inline-block;
+top: 0;
+right: -18px;
+}
+.terms-privacy li+li a:after {
+display: none;
+}
+
+
+
+.coupon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .coupon-content {
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+    border: 2px dashed #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .coupon-content:hover {
+    transform: scale(1.05);
+  }
+  
+  .coupon-header {
+    background-color: #4caf50;
+    padding: 15px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .coupon-body {
+    padding: 20px;
+  }
+  
+  .coupon-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .coupon-description {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .coupon-footer {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  

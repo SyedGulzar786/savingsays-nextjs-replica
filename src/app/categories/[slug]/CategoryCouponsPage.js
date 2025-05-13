@@ -52,7 +52,24 @@ export default function CategoryCouponsPage({category, initialCoupons}) {
                       <li>885 People Used Today</li>
                     </ul>
                   </div>
-
+                  <div className="d-flex justify-content-center align-items-center mt-4 mb-4">
+                <div className="ad-container">
+                  <img
+                    src="/assets/images/Rectangle 170.png/"
+                    alt="Smiling woman with a blue headband and pink shirt, standing against a teal background, celebrating with clenched fists"
+                  />
+                  <div className="ad-text">ADVERTISEMENT AREA</div>
+                </div>
+              </div>
+              <div className="d-flex justify-content-center align-items-center mt-4 mb-4">
+                <div className="ad-container">
+                  <img
+                    src="/assets/images/Rectangle 171.png/"
+                    alt="Smiling woman with a blue headband and pink shirt, standing against a teal background, celebrating with clenched fists"
+                  />
+                  <div className="ad-text">ADVERTISEMENT AREA</div>
+                </div>
+              </div>
                 </div>
               </div>
             </div>
